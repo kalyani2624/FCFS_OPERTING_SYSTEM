@@ -33,8 +33,14 @@ int main(){
 	{
 	totaltat+=tat[i];
 	totalwt+=wt[i];
-    }    
+        }  
+	printf("\nprocess\tat\tbt\tft\ttat\twt\n");
+	for(i=0;i<n;i++)
+	{
+		printf("\n%d\t%d\t%d\t%d\t%d\t%d\n",i+1,at[i],bt[i],ft[i],tat[i],wt[i]);
+	} 
 	printf("\n avg_tat = %.2f",totaltat/n);
 	printf("\n avg_wt = %.2f",totalwt/n);
 	
 	}
+
